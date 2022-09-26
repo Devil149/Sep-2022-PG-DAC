@@ -1,0 +1,133 @@
+Q1. Relationship between JVM, JDK, and JRE 
+
+JVM (Java Virtual Machine)
+JVM is an abstract machine. 
+It is called a virtual machine because it doesn't physically exist. 
+It is a specification that provides a runtime environment in which Java bytecode can be executed. 
+It can also run those programs which are written in other languages and compiled to Java bytecode.
+The JVM performs the following main tasks - Loads code, Verifies code, Executes code, Provides runtime environment.
+
+
+JRE (Java Runtime Environment)
+JRE is an acronym for Java Runtime Environment. 
+It is also written as Java Rune Time Environment. 
+The Java Runtime Environment is a set of software tools which are used for developing Java applications. 
+It is used to provide the runtime environment. 
+It is the implementation of JVM. It physically exists. 
+It contains a set of libraries + other files that JVM uses at runtime.
+
+
+JDK (Java Development Kit)
+JDK is an acronym for Java Development Kit. 
+The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and applets.
+It physically exists. It contains JRE + development tools.
+The JDK contains a private Java Virtual Machine (JVM) and a few other resources 
+such as an interpreter/loader (java), a compiler (javac), an archiver (jar), 
+a documentation generator (Javadoc), etc. to complete the development of a Java Application.
+
+
+
+
+
+
+Q2.JVM ARCHITECTURE
+JVM (Java Virtual Machine) is an abstract machine. 
+It is a specification that provides runtime environment in which java bytecode can be executed.
+JVMs are available for many hardware and software platforms (i.e. JVM is platform dependent).
+
+Architecture of JVM :
+1) Classloader
+	Classloader is a subsystem of JVM which is used to load class files. 
+	Whenever we run the java program, it is loaded first by the classloader. 
+2) Class(Method) Area
+	Class(Method) Area stores per-class structures such as the runtime constant pool, field and method data, the code for methods.
+
+3) Heap
+	It is the runtime data area in which objects are allocated.
+
+4) Stack
+	Java Stack stores frames. It holds local variables and partial results, and plays a part in method invocation and return.
+5) Program Counter Register
+	PC (program counter) register contains the address of the Java virtual machine instruction currently being executed.
+6) Native Method Stack
+	It contains all the native methods used in the application.
+7) Execution Engine
+	It contains: virtual processor, Interpreter, Just-In-Time(JIT) compiler
+	*Interpreter: Read bytecode stream then execute the instructions.
+	*Just-In-Time(JIT) compiler: It is used to improve the performance. 
+	JIT compiles parts of the byte code that have similar functionality at the same time, 
+	and hence reduces the amount of time needed for compilation. 
+8) Java Native Interface
+	Java Native Interface (JNI) is a framework which provides an interface to communicate 
+	with another application written in another language like C, C++, Assembly etc. 
+	Java uses JNI framework to send output to the Console or interact with OS libraries.
+	
+	
+	
+Q3.FEATURES OF JAVA
+
+1.Simple
+	Java is very easy to learn, and its syntax is simple, clean and easy to understand.
+2.Object-oriented
+	Java is an object-oriented programming language. 
+	Everything in Java is an object. 
+	Basic concepts of OOPs are:
+	Object
+	Class
+	Inheritance
+	Polymorphism
+	Abstraction
+	Encapsulation
+3.Platform Independent
+	Java is platform independent because it is different from other languages like C, C++, etc. which are compiled into platform specific machines 
+	While Java code written on one machine can run anywhere on any OS. 
+	A platform is the hardware or software environment in which a program runs.
+	Hence Java dont need the same platform on which it has compiled.
+	'.class' file of java can be run on any machine. Hence it is PLATFORM INDEPENDANT
+4.Secured
+	Java is best known for its security. 
+	With Java, we can develop virus-free systems. 
+	Java is secured because:
+		No explicit pointer
+		Java Programs run inside a virtual machine sandbox	
+		Classloader
+5.Robust
+	The English mining of Robust is strong. Java is robust because:
+		It uses strong memory management.
+		There is a lack of pointers that avoids security problems.
+		Java provides automatic garbage collection which runs on the 
+		Java Virtual Machine to get rid of objects which are not being used by a Java application anymore.
+		There are exception handling and the type checking mechanism in Java. All these points make Java robust.
+6.Architecture-neutral
+	Java is architecture neutral because there are no implementation dependent features, 
+	for example, the size of primitive types is fixed.
+	In C programming, int data type occupies 2 bytes of memory for 32-bit architecture and 4 bytes of memory for 64-bit architecture. 
+	However, it occupies 4 bytes of memory for both 32 and 64-bit architectures in Java.
+
+
+
+Q4.REAL LIFE EXAMPLE OOPS PILLERS
+
+Encapsulation : 
+	organization is consists of several departments like 
+	the production department, purchase department, sales department, and Accounts department. 
+	It combines all these departments together and had formed the organization.
+
+Abstraction :
+In an ATM machine, we can perform functions like withdraw cash, deposit cash, check balance.
+ATM performs a lot of actions but doesn’t show us the process. 
+It has hidden its process by showing only the main things like getting inputs and giving the output.
+
+Poly-morephism :
+	Suppose thre is a man.
+	Man can be a teacher, a man can be a buisness man, or a man can be a government employee.  
+	So that this man can exist in different ways in different situations.
+	That is the method man has different forms.
+
+Inheritance :
+Let's assume that there is a class as Vehicle. 
+All vehicles are not the same. 
+We can inherit common properties like color, size, type from the parent vehicle class and 
+create classes like Car, Bus, Bike.
+
+

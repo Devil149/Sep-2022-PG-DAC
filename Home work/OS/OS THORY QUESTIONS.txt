@@ -1,0 +1,94 @@
+*************** DIFFERENCE BETWEEN PROCESS AND THREAD ******************
+
+POINT NO. 01.	
+A process is a program under execution i.e an active program.	
+A thread is a lightweight process that can be managed independently by a scheduler.
+
+POINT NO. 02.	
+Processes require more time for context switching as they are more heavy.	
+Threads require less time for context switching as they are lighter than processes.
+
+POINT NO. 03.	
+Processes are totally independent and don’t share memory.	
+A thread may share some memory with its peer threads.
+
+POINT NO. 04.	
+Communication between processes requires more time than between threads.	
+Communication between threads requires less time than between processes .
+
+POINT NO. 05.
+If a process gets blocked, remaining processes can continue execution.	
+If a user level thread gets blocked, all of its peer threads also get blocked.
+
+POINT NO. 06
+Processes require more resources than threads.	
+Threads generally need less resources than processes.
+
+POINT NO. 07
+Individual processes are independent of each other.	
+Threads are parts of a process and so are dependent.
+
+POINT NO. 08
+Processes have independent data and code segments.	
+A thread shares the data segment, code segment, files etc. with its peer threads.
+
+POINT NO. 09
+All the different processes are treated separately by the operating system.	
+All user level peer threads are treated as a single task by the operating system.
+
+POINT NO. 10
+Processes require more time for creation.	
+Threads require less time for creation.
+
+POINT NO. 11
+Processes require more time for termination.	
+Threads require less time for termination.
+
+
+
+
+
+
+
+
+
+
+
+***********************      DIFFERENCE	BETWEEN USER LEVEL THREAD & KERNAL LEVEL THREAD **********************
+
+
+POINT NO. 01.
+	User threads are implemented by users.	
+	Kernel threads are implemented by Operating System (OS).
+
+POINT NO. 02
+	Operating System doesn’t recognize user level threads.	
+	Kernel threads are recognized by Operating System.
+
+POINT NO. 03
+	Implementation of User threads is easy.	
+	Implementation of Kernel thread is complicated.
+
+POINT NO. 04.
+	Context switch time is less.	
+	Context switch time is more.
+
+POINT NO. 05
+	Context switch requires no hardware support.	
+	Hardware support is needed.
+
+POINT NO. 06	
+	If one user level thread performs blocking operation then entire process will be blocked.	
+	If one kernel thread perform blocking operation then another thread can continue execution.
+
+POINT NO. 07
+	Multithread applications cannot take advantage of multiprocessing.	
+	Kernels can be multithreaded.
+
+POINT NO. 08
+	User level threads can be created and managed more quickly. 	
+	Kernel level threads take more time to create and manage. 
+
+POINT NO. 09
+	Any operating system can support user-level threads.	
+	Kernel level threads are operating system-specific.

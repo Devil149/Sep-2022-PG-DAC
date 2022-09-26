@@ -1,0 +1,35 @@
+#!/bin/bash
+echo "ENTER THREE NUMBERS :"
+read num1
+read num2
+read num3
+
+if (( num1> num2 && num1> num3))
+then
+        echo "$num1 is greatest"
+elif ((num2> num3))
+then
+        echo "$num2 is greatest"
+else
+        echo "$num3 is greatest"
+
+fi
+
+atharv@DESKTOP-D2MEP7H:~$ ./bigno.sh
+ENTER THREE NUMBERS :
+1
+2
+3
+3 is greatest
+atharv@DESKTOP-D2MEP7H:~$ ./bigno.sh
+ENTER THREE NUMBERS :
+3
+2
+1
+3 is greatest
+atharv@DESKTOP-D2MEP7H:~$ ./bigno.sh
+ENTER THREE NUMBERS :
+1
+3
+2
+3 is greatest
